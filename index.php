@@ -51,6 +51,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <li><?php next_posts_link( 'Précédent' ); ?></li>
                 <li><?php previous_posts_link( 'Suivant' ); ?></li>
             </ul>
+            <?php next_posts_link( 'Older posts' ); ?>
+<?php previous_posts_link( 'Newer posts' ); ?>s
         <?php   endif; ?> </div> <!-- /.blog-main -->
 
 				<?php get_footer(); ?>
