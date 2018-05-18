@@ -1,4 +1,17 @@
-<?php wp_head(); 
+<?php wp_head(); ?>
+<?php wp_body();
+// Custom Post Type
+function create_my_custom_post() {
+    register_post_type( 'my-custom-post',
+    array(
+    'labels' => array(
+    'name' => __( 'My Custom Post' ),
+    'singular_name' => __( 'My Custom Post' ),
+    ),
+    'public' => true,
+    'has_archive' => true,
+    'supports' => array(
+    'title',
 
 add_action( 'wp_enqueue_scripts', 'startwordpress_scripts' );
 </head> 
@@ -31,8 +44,8 @@ function custom_settings_add_menu() {
    'custom-settings', 'custom_settings_page', null, 99 );
    }
    add_action( 'admin_menu', 'c
+?>
 
-}
 
 
 
